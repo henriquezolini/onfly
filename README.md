@@ -3,13 +3,13 @@
 Este projeto é uma aplicação Full Stack para gerenciamento de pedidos de viagem corporativa, composta por uma API REST em Laravel e um front-end em Vue.js.
 
 ### Login
-<img width="1169" height="731" alt="image" src="https://github.com/user-attachments/assets/e9d09f08-a746-43be-aea2-2b8af7c83e32" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/34f58e02-e08d-44af-b8d7-640a6c327006" />
 
 ### Dashboard
-<img width="1285" height="679" alt="image" src="https://github.com/user-attachments/assets/cb707031-33fd-404b-87d0-10654b1262cb" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/9441a7c9-ee2b-4bf1-8be0-9a69387eb3cf" />
 
 ### Solicitação
-<img width="1284" height="641" alt="image" src="https://github.com/user-attachments/assets/a4d90c26-21dc-4276-9bf3-e87b7e72b5f4" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/16c7ac60-b629-46a1-8f56-7d04a2417cb4" />
 
 ## Pré-requisitos
 
