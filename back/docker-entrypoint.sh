@@ -14,11 +14,16 @@ if [ ! -f ".env" ]; then
     php artisan key:generate
 fi
 
-# Run migrations if database file doesn't exist or just to be safe
-# Note: In a real production env, you might want to run this manually or more carefully
-echo "Running migrations..."
-touch database/database.sqlite
-php artisan migrate --force
+# Check if database exists
+if [ ! -f "database/database.sqlite" ]; then
+    echo "Database not found. Creating and seeding..."
+    touch database/database.sqlite
+    php artisan migrate --force
+    php artisan db:seed --force
+else
+    echo "Database exists. Running migrations to ensure schema is up to date..."
+    php artisan migrate --force
+fi
 
 echo "Starting server..."
 exec "$@"
