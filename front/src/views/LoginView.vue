@@ -17,7 +17,7 @@ const handleSubmit = async () => {
     });
     notificationStore.add("Login realizado com sucesso!", "success");
   } catch (error) {
-    notificationStore.add("Falha no login. Verifique suas credenciais.", "error");
+    notificationStore.add(authStore.error || "Falha no login. Verifique suas credenciais.", "error");
   }
 };
 

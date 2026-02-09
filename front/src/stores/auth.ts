@@ -37,8 +37,9 @@ export const useAuthStore = defineStore("auth", () => {
       if (e.response && e.response.data && e.response.data.errors) {
         error.value = Object.values(e.response.data.errors).flat().join(", ");
       } else {
-        error.value = "Login failed. Please check your credentials.";
+        error.value = "Falha no login. Verifique suas credenciais.";
       }
+      throw e;
     } finally {
       loading.value = false;
     }
